@@ -43,15 +43,5 @@ public class user {
     public void setPassword(String password) {
         this.password = password;
     }
-    public String insertUser() throws SQLException {
-        Statement stmt = (new DB()).getConn().createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM users where email = '" + this.email + "'");
-        boolean found = false;
-        if(!rs.next()) {
-            stmt.executeUpdate("insert into users values ('" + this.userName + "', '" + this.email + "', '" + this.password + "')");
-            return "user added";
-        }
-        return "user already existing";
-    }
 
 }
