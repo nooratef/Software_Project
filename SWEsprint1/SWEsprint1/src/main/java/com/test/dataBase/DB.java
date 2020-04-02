@@ -36,7 +36,7 @@ public class DB {
     }
     //----------------------------------------
     public List<user> listAllUsers() throws SQLException {
-        ResultSet result = this.stmt.executeQuery("SELECT * FROM users");
+        ResultSet result = this.stmt.executeQuery("SELECT * FROM usersData");
         // print out query result
         List<user> users = new ArrayList<user>();
         while (result.next()) {
@@ -50,9 +50,9 @@ public class DB {
     }
     //-----------------------------------------------
     public String insertUser(user newUser) throws SQLException {
-        ResultSet result = this.stmt.executeQuery("SELECT * FROM users where email = '" + newUser.getEmail() + "'");
+        ResultSet result = this.stmt.executeQuery("SELECT * FROM usersData where email = '" + newUser.getEmail() + "'");
         if(!result.next()) {
-            this.stmt.executeUpdate("insert into users values ('" + newUser.getUserName() + "', '" + newUser.getEmail() + "', '" + newUser.getPassword() + "')");
+            this.stmt.executeUpdate("insert into usersData values ('" + newUser.getUserName() + "', '" + newUser.getEmail() + "', '" + newUser.getPassword() + "')");
             return "user added";
         }
         return "user already existing";
@@ -63,12 +63,12 @@ public class DB {
         if(this.conn!=null)
         {
             DatabaseMetaData dbmd = this.conn.getMetaData();
-            ResultSet result = dbmd.getTables(null, null, "users".toUpperCase(),null);
+            ResultSet result = dbmd.getTables(null, null, "usersData".toUpperCase(),null);
             if(result.next()) {
                 found = true;
             }
             else {
-                this.stmt.executeUpdate("Create table users (userName varchar(30) , email varchar(30) primary key, password varchar(30))");
+                this.stmt.executeUpdate("Create table usersData (userName varchar(30) , email varchar(30) primary key, password varchar(30))");
             }
 
         }
