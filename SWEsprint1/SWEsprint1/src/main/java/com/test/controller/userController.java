@@ -1,13 +1,11 @@
 package com.test.controller;
 
 import com.test.dataBase.DB;
-import com.test.module.userData;
+import com.test.module.user;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
@@ -23,12 +21,12 @@ public class userController {
         DB db = new DB();
         Statement stmt = (db).getConn().createStatement();
         db.isTableExist(stmt);
-        userData newUser = new userData(name, email, pass);
+        user newUser = new user(name, email, pass);
         return newUser.insertUser();
     }
 
     @RequestMapping("/list")
-    public List<userData> showAll() throws SQLException {
+    public List<user> showAll() throws SQLException {
         DB db = new DB();
         Statement stmt = (db).getConn().createStatement();
         db.isTableExist(stmt);
