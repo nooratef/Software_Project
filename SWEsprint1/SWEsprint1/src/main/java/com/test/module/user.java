@@ -6,15 +6,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class userData {
-    String userName;
-    String email;
-    String password;
+public class user {
+    protected String userName;
+    protected String email;
+    protected String password;
 
-    public userData() {
+    public user() {
     }
 
-    public userData(String userName, String email, String password) {
+    public user(String userName, String email, String password) {
         this.userName = userName;
         this.email = email;
         this.password = password;

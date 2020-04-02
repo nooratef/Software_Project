@@ -1,9 +1,6 @@
 package com.test.dataBase;
 
-import com.test.module.userData;
-import org.springframework.web.bind.annotation.Mapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.test.module.user;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -19,16 +16,16 @@ public class DB {
 
     }
 
-    public List<userData> listAllUsers() throws SQLException {
+    public List<user> listAllUsers() throws SQLException {
         Statement stmt = conn.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT * FROM users");
         // print out query result
-        List<userData> users = new ArrayList<userData>();
+        List<user> users = new ArrayList<user>();
         while (rs.next()) {
            String name = rs.getString("userName");
            String email = rs.getString("email");
            String pass = rs.getString("password");
-            userData user = new userData(name,email,pass);
+            user user = new user(name,email,pass);
             users.add(user);
         }
         return users;
