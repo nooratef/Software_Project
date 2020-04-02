@@ -7,9 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class user {
-    String userName;
-    String email;
-    String password;
+    protected String userName;
+    protected String email;
+    protected String password;
 
     public user() {
     }
