@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Fri Apr 03 17:17:36 EET 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.3.0 - (1405108): instance a816c00e-0171-409e-6b98-00000df4d358 
-on database directory C:\projectdb\DB  with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Fri Apr 03 20:42:03 EET 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.3.0 - (1405108): instance a816c00e-0171-4159-9914-000007662828 
+on database directory C:\projectdb\userDB  with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
 Loaded from file:/C:/Users/Aya/.m2/repository/org/apache/derby/derby/10.8.3.0/derby-10.8.3.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_231-b11

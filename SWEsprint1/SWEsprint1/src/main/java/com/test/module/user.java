@@ -1,11 +1,5 @@
 package com.test.module;
 
-import com.test.dataBase.DB;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 public class user {
     protected String userName;
     protected String email;

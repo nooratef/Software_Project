@@ -6,13 +6,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DB {
+public class userDB implements iUserDatabase {
 
     private Statement stmt;
     private Connection conn;
     //-----------------------------------
-    public DB() throws SQLException {
-        String dbUrl = "jdbc:derby:C:\\projectdb\\DB;create=true";
+    public userDB() throws SQLException {
+        String dbUrl = "jdbc:derby:C:\\projectdb\\userDB;create=true";
         this.conn = DriverManager.getConnection(dbUrl);
         this.stmt = conn.createStatement();
         this.isTableExist();
@@ -55,7 +55,7 @@ public class DB {
             this.stmt.executeUpdate("insert into usersData values ('" + newUser.getUserName() + "', '" + newUser.getEmail() + "', '" + newUser.getPassword() + "')");
             return "user added";
         }
-        return "user already existing";
+        return "user email already exist";
     }
     //----------------------------------------------------
     public void isTableExist() throws SQLException {
