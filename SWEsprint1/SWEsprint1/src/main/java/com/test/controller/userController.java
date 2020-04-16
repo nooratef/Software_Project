@@ -2,10 +2,7 @@ package com.test.controller;
 
 import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
 import com.test.dataBase.userDB;
-import com.test.module.administrator;
-import com.test.module.normalUser;
-import com.test.module.storeOwner;
-import com.test.module.user;
+import com.test.module.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,18 +24,27 @@ public class userController {
     }
 
     //---------------------------------------------------
-    @RequestMapping(value = "/register", params = "userType")
-    public String insertUser(@RequestParam("userName") String name,
+    @RequestMapping(value = "/register storeOwner", params = "userType")
+    public String insertStoreOwner(@RequestParam("userName") String name,
                              @RequestParam("email") String email,
-                             @RequestParam("password") String pass,
-                             @RequestParam("userType") String userType
+                             @RequestParam("password") String pass
     ) throws SQLException {
         userDB userDb = new userDB();
-        if(userType.equals("admin"))
-            return userDb.insertUser(new administrator(name, email, pass, userType));
-        else if(userType.equals("storeOwner"))
-            return userDb.insertUser(new storeOwner(name, email, pass, userType));
-        return "";
+            return userDb.insertUser(new storeOwner(name, email, pass,"storeOwner"));
+
+    }
+    //--------------------------------------------------
+
+    @RequestMapping(value = "/register Admin")
+    public String insertAdmin(@RequestParam("userName") String name,
+                             @RequestParam("email") String email,
+                             @RequestParam("password") String pass
+
+    ) throws SQLException {
+        userDB userDb = new userDB();
+         if(loggedUser.getActiveUser().getUserType().equals("admin"))
+            return userDb.insertUser(new administrator(name, email, pass));
+        return "Admin login error: you aren't allowed to access this page ";
     }
     //--------------------------------------------------
     @RequestMapping("/login")

@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f29c6ecf-31a8-4e04-a6d1-9dab66afcd6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/dataBase/userDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/dataBase/userDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/module/administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/module/administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/module/normalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/module/normalUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/module/storeOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/module/storeOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/module/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/module/user.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SWEsprint1.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/SWEsprint1.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/controller/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/controller/userController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/dataBase/userDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/dataBase/userDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/module/administrator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/module/administrator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/module/normalUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/module/normalUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/module/storeOwner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/module/storeOwner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/module/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/module/user.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/user.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -43,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -52,8 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/administrator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/loggedUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -79,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/userController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="408">
+              <caret line="53" column="37" lean-forward="true" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/dataBase/userDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+            <state relative-caret-position="697">
+              <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -126,12 +120,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/test/module/administrator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/controller/userController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/dataBase/userDB.java" />
+      </list>
+    </option>
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1146" />
+    <option name="y" value="-18" />
+    <option name="width" value="2577" />
+    <option name="height" value="1770" />
   </component>
   <component name="ProjectId" id="1ZzhnuvuAAXSFcGgqGEFzM1l2SD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -140,8 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,6 +213,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,17 +280,18 @@
       <workItem from="1585969088856" duration="11000" />
       <workItem from="1585971159589" duration="691000" />
       <workItem from="1586924825766" duration="1577000" />
+      <workItem from="1587067078102" duration="7718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22385000" />
+    <option name="totallyTimeSpent" value="30103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26618123" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27022654" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -325,6 +335,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -349,12 +365,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/normalUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/storeOwner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/user.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -371,41 +408,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/dataBase/userDB.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/loggedUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/userController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="408">
+          <caret line="53" column="37" lean-forward="true" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/storeOwner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/dataBase/userDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/normalUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/module/user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="697">
+          <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
         </state>
       </provider>
     </entry>
