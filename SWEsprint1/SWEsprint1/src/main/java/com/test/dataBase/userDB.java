@@ -1,5 +1,6 @@
 package com.test.dataBase;
 
+import com.test.module.loggedUser;
 import com.test.module.user;
 
 import java.sql.*;
@@ -17,6 +18,7 @@ public class userDB implements iUserDatabase {
         this.stmt = conn.createStatement();
         this.isTableExist();
     }
+
     //-------------------------------------
 
     public Statement getStmt() {
@@ -35,24 +37,41 @@ public class userDB implements iUserDatabase {
         return conn;
     }
     //----------------------------------------
-    public List<user> listAllUsers() throws SQLException {
-        ResultSet result = this.stmt.executeQuery("SELECT * FROM usersData");
-        // print out query result
-        List<user> users = new ArrayList<user>();
-        while (result.next()) {
-           String name = result.getString("userName");
-           String email = result.getString("email");
-           String pass = result.getString("password");
-            user user = new user(name,email,pass);
-            users.add(user);
+    public String login(user user) throws SQLException {
+        ResultSet result = this.stmt.executeQuery("SELECT * FROM users where email = '" + user.getEmail() + "'");
+        if(result.next()) {
+            String userType = result.getString("userType");
+            String userName = result.getString("userName");
+            user.setUserType(userType);
+            user.setUserName(userName);
+            loggedUser.setActiveUser(user);
+            return "logged in";
         }
-        return users;
+        return "this user not found, please register first";
     }
+    //----------------------------------------
+    public List<user> listAllUsers() throws SQLException {
+        List<user> users = new ArrayList<user>();
+        if(loggedUser.getActiveUser().getUserType().equals("admin")) {
+            ResultSet result = this.stmt.executeQuery("SELECT * FROM users");
+            // print out query result
+            while (result.next()) {
+                String name = result.getString("userName");
+                String email = result.getString("email");
+                String pass = result.getString("password");
+                String userType = result.getString("userType");
+                user user = new user(name, email, pass, userType);
+                users.add(user);
+            }
+        }
+            return users;
+    }
+
     //-----------------------------------------------
     public String insertUser(user newUser) throws SQLException {
-        ResultSet result = this.stmt.executeQuery("SELECT * FROM usersData where email = '" + newUser.getEmail() + "'");
+        ResultSet result = this.stmt.executeQuery("SELECT * FROM users where email = '" + newUser.getEmail() + "'");
         if(!result.next()) {
-            this.stmt.executeUpdate("insert into usersData values ('" + newUser.getUserName() + "', '" + newUser.getEmail() + "', '" + newUser.getPassword() + "')");
+            this.stmt.executeUpdate("insert into users values ('" + newUser.getUserName() + "', '" + newUser.getEmail() + "', '" + newUser.getPassword() + "','" + newUser.getUserType()+ "')");
             return "user added";
         }
         return "user email already exist";
@@ -63,12 +82,12 @@ public class userDB implements iUserDatabase {
         if(this.conn!=null)
         {
             DatabaseMetaData dbmd = this.conn.getMetaData();
-            ResultSet result = dbmd.getTables(null, null, "usersData".toUpperCase(),null);
+            ResultSet result = dbmd.getTables(null, null, "users".toUpperCase(),null);
             if(result.next()) {
                 found = true;
             }
             else {
-                this.stmt.executeUpdate("Create table usersData (userName varchar(30) , email varchar(30) primary key, password varchar(30))");
+                this.stmt.executeUpdate("Create table users (userName varchar(30) , email varchar(30) primary key, password varchar(30),userType varchar(30))");
             }
 
         }

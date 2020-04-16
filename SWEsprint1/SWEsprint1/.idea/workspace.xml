@@ -3,6 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="f29c6ecf-31a8-4e04-a6d1-9dab66afcd6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/dataBase/userDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/dataBase/userDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/module/administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/module/administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/module/normalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/module/normalUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/module/storeOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/module/storeOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/module/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/module/user.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SWEsprint1.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/SWEsprint1.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/controller/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/controller/userController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/dataBase/userDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/dataBase/userDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/module/administrator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/module/administrator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/module/normalUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/module/normalUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/module/storeOwner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/module/storeOwner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/module/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/module/user.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,29 +126,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/test/module/storeOwner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/dataBase/DB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/dataBase/Iuserdatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/controller/userController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/dataBase/userDB.java" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1146" />
-    <option name="y" value="-18" />
-    <option name="width" value="2577" />
-    <option name="height" value="1770" />
   </component>
   <component name="ProjectId" id="1ZzhnuvuAAXSFcGgqGEFzM1l2SD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -326,12 +325,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
