@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f29c6ecf-31a8-4e04-a6d1-9dab66afcd6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/module/administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/module/administrator.java" afterDir="false" />
-    </list>
+    <list default="true" id="f29c6ecf-31a8-4e04-a6d1-9dab66afcd6a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +133,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1146" />
     <option name="y" value="-18" />
     <option name="width" value="2577" />
@@ -280,15 +277,15 @@
       <workItem from="1585969088856" duration="11000" />
       <workItem from="1585971159589" duration="691000" />
       <workItem from="1586924825766" duration="1577000" />
-      <workItem from="1587067078102" duration="7718000" />
+      <workItem from="1587067078102" duration="8313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30103000" />
+    <option name="totallyTimeSpent" value="30698000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
+    <frame x="-6" y="-6" width="1292" height="692" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27022654" />
