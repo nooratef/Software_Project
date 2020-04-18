@@ -6,24 +6,42 @@ Software Project Using Spring Boot
 
 
 1-/register -->
+&nbsp;
 -userName
+&nbsp;
 -password
+&nbsp;
 -email
-2-/registerStoreOwner -->  	
+&nbsp;
+2-/registerStoreOwner --> 
+&nbsp;	
 -userName
+&nbsp;
 -password
+&nbsp;
 -email
+&nbsp;
 3-/login -->
+&nbsp;
 -userName or email
+&nbsp;
 -password
+&nbsp;
 4-/registerAdmin -->
-Hint : for first time to use this service you can login by : “Admin” As a username ,”password” As a password  	
--userName
+Hint : for first time to use this service you can login by : “Admin” As a username ,”password” As a password 
+&nbsp;	
+-userName 
+&nbsp;
 -password
+&nbsp;
 -email
-5-/list	-->	
+&nbsp;
+5-/list	-->
+&nbsp;
 Takes no Parameters 
- <<the README text file attached with project have more details about each service and how to run it successfully >>
+&nbsp;
+&nbsp;
+ <the README text file attached with project have more details about each service and how to run it successfully >
 	
 	
 
