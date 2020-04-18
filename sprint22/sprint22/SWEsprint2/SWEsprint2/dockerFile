@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/SWEsprint1-1.0-SNAPSHOT.jar SWEsprint1-1.0-SNAPSHOT.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "SWEsprint1-1.0-SNAPSHOT.jar"]
