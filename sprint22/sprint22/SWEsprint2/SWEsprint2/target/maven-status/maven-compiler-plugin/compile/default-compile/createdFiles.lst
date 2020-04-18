@@ -1,0 +1,7 @@
+com\test\dataBase\userDB.class
+com\test\dataBase\iUserDatabase.class
+com\test\controller\userController.class
+com\test\module\user.class
+com\test\authentication\authenticator.class
+com\test\module\loggedUser.class
+com\test\main.class
