@@ -6,6 +6,7 @@ import com.test.module.*;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -42,7 +43,7 @@ public class userController {
         userDB userDb = new userDB();
         if (loggedUser.getActiveUser() != null) {
             if (loggedUser.getActiveUser().getUserType().equals("admin"))
-                return userDb.insertUser(new user(name, email, pass,"admin"));
+                return userDb.insertUser(new user(name, email, pass, "admin"));
         } else if (loggedUser.getActiveUser() == null)
             return "No user logged in";
         return "Admin Registration error, admin access only ";
@@ -69,6 +70,14 @@ public class userController {
     @RequestMapping("/list")
     public List<user> showAll() throws SQLException {
         userDB userDb = new userDB();
-        return userDb.listAllUsers();
+        //check ther is a logged user in the system
+        if (loggedUser.getActiveUser() != null) {
+            //check the authorization for accessing List
+            if (loggedUser.getActiveUser().getUserType().equals("admin")) {
+                return userDb.listAllUsers();
+            }
+        }
+        System.out.println("Error to access, admins only ");
+        return Collections.emptyList();
     }
 }

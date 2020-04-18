@@ -94,8 +94,7 @@ public class userDB implements iUserDatabase {
     public List<user> listAllUsers() throws SQLException {
         List<user> users = new ArrayList<user>();
         // ResultSet result = this.stmt.executeQuery("SELECT * FROM users ");
-        if (loggedUser.getActiveUser() != null) {
-            if (loggedUser.getActiveUser().getUserType().equals("admin")) {
+
                 ResultSet result = this.stmt.executeQuery("SELECT * FROM users");
                 // print out query result
                 while (result.next()) {
@@ -106,8 +105,7 @@ public class userDB implements iUserDatabase {
                     user user = new user(name, email, pass, userType);
                     users.add(user);
                 }
-            }
-        }
+
 
            // System.out.println("please login first");
         return users;
