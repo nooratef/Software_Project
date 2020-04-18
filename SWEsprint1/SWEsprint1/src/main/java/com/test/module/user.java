@@ -1,11 +1,11 @@
 package com.test.module;
 
 public class user {
-    protected String userName;
-    protected String email;
-    protected String password;
+    private String userName;
+    private String email;
+    private String password;
     String userType;
-    user(){}
+   public  user(){}
 
     public user(String userName, String email, String password, String userType) {
         this.userName = userName;

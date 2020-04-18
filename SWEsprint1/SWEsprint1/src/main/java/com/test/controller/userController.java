@@ -2,11 +2,9 @@ package com.test.controller;
 
 import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
 import com.test.dataBase.userDB;
+import com.test.authentication.authenticator;
 import com.test.module.*;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -14,47 +12,60 @@ import java.util.List;
 @RestController
 public class userController {
 
-    @RequestMapping(value = "/register")
+    @PostMapping(value = "/register")
     public String insertUser(@RequestParam("userName") String name,
                              @RequestParam("email") String email,
                              @RequestParam("password") String pass
     ) throws SQLException {
         userDB userDb = new userDB();
-        return userDb.insertUser(new normalUser(name, email, pass, "normalUser"));
+        return userDb.insertUser(new user(name, email, pass, "normalUser"));
     }
 
     //---------------------------------------------------
-    @RequestMapping(value = "/register storeOwner", params = "userType")
+    @PostMapping(value = "/registerStoreOwner")
     public String insertStoreOwner(@RequestParam("userName") String name,
-                             @RequestParam("email") String email,
-                             @RequestParam("password") String pass
+                                   @RequestParam("email") String email,
+                                   @RequestParam("password") String pass
     ) throws SQLException {
+
         userDB userDb = new userDB();
-            return userDb.insertUser(new storeOwner(name, email, pass,"storeOwner"));
+        return userDb.insertUser(new user(name, email, pass, "storeOwner"));
 
     }
     //--------------------------------------------------
 
-    @RequestMapping(value = "/register Admin")
+    @PostMapping(value = "/registerAdmin")
     public String insertAdmin(@RequestParam("userName") String name,
-                             @RequestParam("email") String email,
-                             @RequestParam("password") String pass
+                              @RequestParam("email") String email,
+                              @RequestParam("password") String pass
 
     ) throws SQLException {
         userDB userDb = new userDB();
-         if(loggedUser.getActiveUser().getUserType().equals("admin"))
-            return userDb.insertUser(new administrator(name, email, pass));
-        return "Admin login error: you aren't allowed to access this page ";
+        if (loggedUser.getActiveUser() != null) {
+            if (loggedUser.getActiveUser().getUserType().equals("admin"))
+                return userDb.insertUser(new user(name, email, pass,"admin"));
+        } else if (loggedUser.getActiveUser() == null)
+            return "No user logged in";
+        return "Admin Registration error, admin access only ";
     }
+
     //--------------------------------------------------
-    @RequestMapping("/login")
-    public String login(@RequestParam("email") String email,
-                        @RequestParam("password") String pass
+    @PostMapping("/login")
+    public String login(
+            @RequestParam("userName or email") String nameOrEmail,
+            @RequestParam("password") String password
     ) throws SQLException {
-        userDB userDb = new userDB();
-        return userDb.login(new user("", email, pass, ""));
+
+        authenticator auth = new authenticator();
+        user authenticatedUser = auth.authenticate(nameOrEmail, password);
+        if (authenticatedUser == null)
+            return "this user not found,check credentials ";
+        else {
+            loggedUser.setActiveUser(authenticatedUser);
+            return "logged in";
+        }
     }
-    //---------------------------------------------------
+
     //---------------------------------------------------
     @RequestMapping("/list")
     public List<user> showAll() throws SQLException {

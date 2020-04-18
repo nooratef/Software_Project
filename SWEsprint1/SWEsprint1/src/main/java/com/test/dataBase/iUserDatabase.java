@@ -17,4 +17,7 @@ interface iUserDatabase {
     public List<user> listAllUsers() throws SQLException;
     public String insertUser(user newUser) throws SQLException;
     public void isTableExist() throws SQLException;
+    public user FindByEmail(user user) throws SQLException;
+    public user FindByName(user user) throws SQLException;
+
 }
